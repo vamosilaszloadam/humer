@@ -2,21 +2,27 @@
   <li class="nav-item">
     <a class="nav-link" routerLink="/home">Főoldal</a>
   </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/employee">Dolgozók</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/rank">Beosztások</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/project">Projektek</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/login">Belépés</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" routerLink="/logout">Kilépés</a>
-  </li>
+  @if(isLoggedIn) {
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/employee">Dolgozók</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/rank">Beosztások</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/project">Projektek</a>
+    </li>
+  }
+  @if (!isLoggedIn) {
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/login">Belépés</a>
+    </li>
+  }
+  @if(isLoggedIn) {
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/logout">Kilépés</a>
+    </li>
+  }
 </ul>
 
 @if(isLoggedIn) {
