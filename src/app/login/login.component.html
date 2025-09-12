@@ -1,13 +1,13 @@
 <h2>Belépés</h2>
 
-<form (submit)="login(this)">
+<form [formGroup]="loginForm" (submit)="login($event)">
     <div>
         <label for="user" class="from-label">Felhasználónév</label>
-        <input type="text" id="user" class="form-control" placeholder="felhasználónév">
+        <input type="text" id="user" class="form-control" placeholder="felhasználónév" formControlName="user">
     </div>
     <div>
         <label for="pass" class="from-label">Jelszó</label>
-        <input type="text" id="pass" class="form-control" placeholder="jelszó">
+        <input type="text" id="pass" class="form-control" placeholder="jelszó" formControlName="pass">
     </div>
 
     <button class="btn btn-primary mt-2" type="submit">Belépés</button>
