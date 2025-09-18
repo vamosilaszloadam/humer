@@ -1,6 +1,6 @@
 --TODO: belépés után automatikus navigálás az employee-ra
 --TODO: lap frissítése után nem maradunk belépve
-TODO: kilépés nem működik
+--TODO: kilépés nem működik
 TODO: user komponens admin útvonalon
     localhost:4200/admin/user
 TODO: felhasználókezelés
