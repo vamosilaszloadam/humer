@@ -3,7 +3,7 @@
 --TODO: kilépés nem működik
 --TODO: user komponens admin útvonalon
     localhost:4200/admin/user
-TODO: felhasználók backend-ből
+--TODO: felhasználók backend-ből
 TODO: felhasználók megjelenítése táblázatban
 TODO: új felhasználó felvétele
 TODO: felhasználó módosítása
