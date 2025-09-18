@@ -15,4 +15,16 @@ import { RouterOutlet, RouterLink } from '@angular/router';
 export class AppComponent {
   // title = 'humer';
   isLoggedIn = false;
+
+  ngOnInit() {
+    this.readLogged()
+  }
+
+  readLogged() {
+    const a = localStorage.getItem('isLoggedIn')
+    console.log('eredmény: ', a)
+    if(a != null) {
+      this.isLoggedIn = true
+    }
+  }
 }
