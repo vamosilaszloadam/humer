@@ -13,7 +13,7 @@ export class UserService {
   constructor(private http: HttpClient) { }
 
   getUsers() {
-    const url = 'http://localhost:8000/users'
+    const url = 'http://localhost:8000/api/users'
     // return this.userList
     return this.http.get(url)
   }
