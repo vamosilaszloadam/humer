@@ -34,7 +34,8 @@ export class LoginComponent {
     if(user=='admin' && pass=='admin') {
       console.log('belépés ok...')
       this.app.isLoggedIn = true
-      this.router.navigate(['/employee']);
+      localStorage.setItem('isLoggedIn', 'true')
+      this.router.navigate(['/employee'])
     }
     event.preventDefault();
   }
