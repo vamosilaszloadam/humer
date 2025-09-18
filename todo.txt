@@ -4,10 +4,12 @@
 --TODO: user komponens admin útvonalon
     localhost:4200/admin/user
 --TODO: felhasználók backend-ből
-TODO: felhasználók megjelenítése táblázatban
+--TODO: felhasználók megjelenítése táblázatban
 TODO: új felhasználó felvétele
 TODO: felhasználó módosítása
 TODO: felhasználó törlése
+TODO: jelszómező a backend és frontend oldalon
+TODO: role mező a felhasználótáblában
 
 TODO: login adatbázisból
 TODO: dolgozók kezelése
