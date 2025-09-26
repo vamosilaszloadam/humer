@@ -64,7 +64,9 @@
       <div class="modal-footer">
 
         <div class="password">
-            <button class="btn btn-info" (click)="togglePasswordVisibility()">Látható</button>
+            <button (click)="toggleCustom()" class="btn me-2" [class]='customPassword ? "btn-info" : "btn-secondary"'>Összetett</button>
+            <button (click)="togglePasswordVisibility()" class="btn me-2" [class]='passwordVisible ? "btn-info" : "btn-secondary"'>Látható</button>
+            <button (click)="generatePassword()" class="btn btn-info me-2">Generál</button>
         </div>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Bezár</button>
         <button type="submit" class="btn btn-primary" form="userForm">Ment</button>
