@@ -7,6 +7,7 @@
 --TODO: felhasználók megjelenítése táblázatban
 --TODO: jelszómező a frontend oldalon
 --TODO: role mező a felhasználótáblában
+TODO: A login-nál BehaviorSubject bevezetése
 TODO: új felhasználó felvétele - REST API-nak küldés
 TODO: felhasználó módosítása
 TODO: felhasználó törlése
