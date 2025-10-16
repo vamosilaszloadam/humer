@@ -20,7 +20,7 @@
   }
   @if(isLoggedIn) {
     <li class="nav-item">
-      <a class="nav-link" routerLink="/logout">Kilépés</a>
+      <a class="nav-link" (click)="logout()" style="cursor: pointer;">Kilépés</a>
     </li>
   }
 </ul>

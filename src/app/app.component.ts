@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
+import { RouterOutlet, RouterLink, Router } from '@angular/router';
+import { AuthService } from './shared/auth.service';
 // import { LoginComponent } from "./login/login.component";
 
 @Component({
@@ -16,8 +17,16 @@ export class AppComponent {
   // title = 'humer';
   isLoggedIn = false;
 
+  constructor(
+    private auth: AuthService,
+    private router: Router
+  ) {}
+
   ngOnInit() {
     this.readLogged()
+    this.auth.isLoggedIn$.subscribe(isLoggedIn => {
+      this.isLoggedIn = isLoggedIn
+    })
   }
 
   readLogged() {
@@ -26,5 +35,10 @@ export class AppComponent {
     if(a != null) {
       this.isLoggedIn = true
     }
+  }
+
+  logout() {
+    this.auth.logout();
+    this.router.navigate(['login'])
   }
 }
